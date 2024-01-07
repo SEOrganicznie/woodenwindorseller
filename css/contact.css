@@ -1,0 +1,15 @@
+.contact-container{
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contact-text{
+    order: 1;
+    padding: 5%;
+}
+
+.contact-map{
+    order: 2;
+}
