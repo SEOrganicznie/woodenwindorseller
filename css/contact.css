@@ -1,15 +1,119 @@
-.contact-container{
+label{
     display: flex;
-    width: 60%;
+    color: var(--secondary--font);
+    font-size: .9rem;
+    font-weight: 400;
+    margin: 3px 0;
+}
+
+input{
+    border-radius: 10px;
+}
+
+h1{
+    position: relative;
+    width: 620px;
+    height: 45px;
+    color: var(--primary-font);
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 50px;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+}
+
+.contact-title-container{
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    display: flex;/*add*/
+    flex-direction: column;/*add*/
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 380px;
+    background-color: var(--secondary);
+}
+
+.contact-title{
+    display: grid;
+    text-align: center;
+}
+
+.contact-title p{
+    position: relative;
+    width: 620px;
+    height: 45px;
+    color: var(--support-font);
+    font-size: .9rem;
+    font-weight: 600;
+    text-shadow: var(--text-shadow);
+}
+
+/* SEKCJA FORMULARZA I ADRESU*/
+
+.contact-container-handler{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-data{
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .contact-text{
-    order: 1;
-    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: var(--support-box);
+    width: 16rem;
+    height: 17rem;
+    margin-left: 25px;
+}
+
+.contact-form-button{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-form-button button{
+    width: 5rem;
+    height: 2.2rem;
+    border-radius: 10px;
+    background-color: var(--support-extra);
+    color: var(--primary-font);
+    margin-top: .3rem;
+}
+
+.contact-form-button button:hover{
+    background-color: var(--support-extra-light);
+}
+
+.contact-form-text-box{
+    display: flex;
+    flex-direction: column;
+}
+
+#quest{
+    height: 75px;
 }
 
 .contact-map{
-    order: 2;
+    margin-top: 2rem;
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 450px;
+    border: 0;
 }
