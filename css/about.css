@@ -66,7 +66,7 @@
     position: relative;
     display: grid;
     top: -8rem;
-    left: 6rem;
+    left: 14rem;
 }
 
 .galleryinvite-title h2{
@@ -100,7 +100,7 @@
     justify-content: space-between;
     justify-items: right;
     top: -11rem;
-    left: 6rem;
+    left: 4rem;
 }
 
 .galleryinvite-image-box img{
@@ -205,5 +205,4 @@
     font-size: .8rem;
     font-weight: 600;
     line-height: normal;
-    text-shadow: var(--text-shadow);
 }

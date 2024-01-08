@@ -31,8 +31,9 @@
 
 body{
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary);
-    margin-bottom: 15%;
 }
 
 main{
@@ -80,12 +81,11 @@ header .header-navbar a:hover{
 }
 
 .footer{
-    position: fixed;
+    margin-top: auto;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
-    bottom: 0;
     width: 100%;
     height: 75px;
     background-color: var(--primary);

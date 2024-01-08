@@ -1,13 +1,26 @@
 .gallery-container{
-    align-content: center;
+    position: relative;
+    align-items: center;
     justify-content: space-between;
     display: flex;
     flex-direction: column;
 }
 
 .gallery-title{
+    position: relative;
     text-align: center;
+}
 
+.gallery-title h1{
+    position: relative;
+    width: 620px;
+    height: 45px;
+    color: var(--secondary-font);
+    font-size: 2.1rem;
+    font-weight: 700;
+    line-height: 50px;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
 }
 
 .gallery-wrapper{
