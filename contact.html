@@ -13,27 +13,14 @@
         <link rel="icon" type="image/jpg" href="logo/logo.png">
         <link rel="stylesheet" type="text/css" href="css/global.css">
         <link rel="stylesheet" type="text/css" href="css/contact.css">
+        <script src="js/script.js" async defer></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <header>
-            <div class="header-logo">
-                <a href="index.html">
-                    <img src="logo/logo.png" alt="Logo">
-                </a>
-            </div>
-            <nav class="header-navbar">
-                <a href="index.html">O firmie</a>
-                <a href="offer.html">Oferta</a>
-                <a href="gallery.html">Galeria</a>
-                <a href="contact.html">Kontakt</a>
-            </nav>
-        </header>
-        
-        <script src="js/script.js" async defer></script>
+        <div get-html="data/header.html"></div>
 
         <div id="cookies-container">
             <p>Ta strona korzysta z ciasteczek.</p>
@@ -43,18 +30,18 @@
         <main>
             <section class="contact-title-container">
                 <div class="contact-title">
-                    <h1>Skontaktuj się z nami już dziś</h1><br>
-                    <p>Nie znalazłeś odpowiedzi na swoje pytania? Chcesz podjąć z Nami współpracę?<br>
-                        A może nurtuje Cię jeszcze inna kwestia?<br>
-                        Cokolwiek by to nie było, zapraszamy do kontaktu!</p>
+                    <h1>Skontaktuj się z nami już teraz</h1><br>
+                    <p>Nie znalazłeś odpowiedzi na swoje pytania? Zainteresowany współpracą z Nami?<br>
+                        Zapraszamy do kontaktu, odpowiemy tak szybko jak to tylko możliwe!</p>
                 </div>
             </section>
+
             <section class="contact-container">
                 <div class="contact-container-handler">
                     <div class="contact-data">
                         <div class="contact-text">
                             <div class="contact-title-2">
-                                <h2>Znajdziesz nas:</h2><br>
+                                <h2>Znajdziesz pod tym adresem:</h2><br>
                             </div>
                             <div class="contact-address">
                                 <p>Templatowa 17/222</p>
@@ -70,17 +57,19 @@
                                 <div>
                                     <h2>Masz pytania? Napisz do nas!</h2>
                                 </div>
-                                <div class="contact-form-text-box">
-                                    <label for="name">Imię i nazwisko</label>
-                                    <input type="text" name="name" id="name" required>
-                                </div>
-                                <div class="contact-form-text-box">
-                                    <label  for="email">Email</label>
-                                    <input type="email" name="email" id="email" required>
-                                </div>
-                                <div class="contact-form-text-box">
-                                    <label for="quest">Treść wiadomości</label>
-                                    <input type="text" name="quest" id="quest" required>
+                                <div>
+                                    <div class="contact-form-text-box">
+                                        <label for="name">Imię i nazwisko</label>
+                                        <input type="text" name="name" id="name" required>
+                                    </div>
+                                    <div class="contact-form-text-box">
+                                        <label  for="email">Email</label>
+                                        <input type="email" name="email" id="email" required>
+                                    </div>
+                                    <div class="contact-form-text-box">
+                                        <label for="quest">Treść wiadomości</label>
+                                        <input type="text" name="quest" id="quest" required>
+                                    </div>
                                 </div>
                                 <div class="contact-form-button">
                                     <button type="submit">Wyślij</button>
@@ -95,28 +84,6 @@
             </section>
         </main>
 
-        <footer class="footer">
-            <div class="footer-sm">
-                <a href="https://www.facebook.com/seorganicznie">
-                    <img src="assets/sm/fb.svg" alt="Facebook">
-                </a>
-                <a href="https://www.facebook.com/seorganicznie">
-                    <img src="assets/sm/inst.svg" alt="Instagram">
-                </a>
-                <a href="https://www.facebook.com/seorganicznie">
-                    <img src="assets/sm/linkedin.svg" alt="LinkedIn">
-                </a>
-                <a href="https://www.facebook.com/seorganicznie">
-                    <img src="assets/sm/tw.svg" alt="Twitter">
-                </a>
-                <a href="https://www.facebook.com/seorganicznie">
-                    <img src="assets/sm/yt.svg" alt="Youtube">
-                </a>
-            </div>
-            <div class="footer-rights">
-                <p>&copy; SEOrganicznie 2024. Copyright reserved</p>
-            </div>
-        </footer>
-
+        <div get-html="data/footer.html"></div>
     </body>
 </html>

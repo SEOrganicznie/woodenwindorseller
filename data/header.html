@@ -12,26 +12,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" type="image/jpg" href="logo/logo.png">
         <link rel="stylesheet" type="text/css" href="css/global.css">
-        <script src="js/script.js" async defer></script>
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div get-html="data/header.html"></div>
-
-        <div id="cookies-container">
-            <p>Ta strona korzysta z ciasteczek.</p>
-            <button onclick="closeCookieInfo()">Rozumiem</button>
-        </div>
-        
-        <main>
-            <section>
-                <h1>Offer site</h1>
-            </section>
-        </main>
-
-        <div get-html="data/footer.html"></div>
+        <header>
+            <div class="header-logo">
+                <a href="index.html">
+                    <img src="logo/logo.png" alt="Logo">
+                </a>
+            </div>
+            <nav class="header-navbar">
+                <a href="index.html">O firmie</a>
+                <a href="offer.html">Oferta</a>
+                <a href="gallery.html">Galeria</a>
+                <a href="contact.html">Kontakt</a>
+            </nav>
+        </header>
     </body>
 </html>

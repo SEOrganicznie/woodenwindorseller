@@ -64,19 +64,23 @@ h1{
     width: 100%;
 }
 
+/* ADRES */
+
 .contact-text{
     display: flex;
     flex-direction: column;
     margin-right: 25px;
 }
 
+/* FORMULARZ */
+
 .contact-form{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-radius: 10px;
     background-color: var(--support-box);
-    width: 16rem;
+    width: 18rem;
     height: 17rem;
     margin-left: 25px;
 }
@@ -102,11 +106,14 @@ h1{
 .contact-form-text-box{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 #quest{
     height: 75px;
 }
+
+/* SEKCJA MAPY */
 
 .contact-map{
     margin-top: 2rem;
