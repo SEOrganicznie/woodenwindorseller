@@ -22,7 +22,7 @@ h1{
     text-transform: uppercase;
 }
 
-.contact-title-container{
+.contact-title-section{
     position: relative;
     align-items: center;
     justify-items: center;
@@ -35,12 +35,12 @@ h1{
     background-color: var(--secondary);
 }
 
-.contact-title{
+.contact-title-container{
     display: grid;
     text-align: center;
 }
 
-.contact-title p{
+.contact-title-container p{
     position: relative;
     width: 620px;
     height: 45px;

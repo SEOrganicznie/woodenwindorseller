@@ -49,6 +49,8 @@ section{
     padding: 2%;
 }
 
+/*SEKCJA HEADERA*/
+
 header{
     position: flex;
     align-items: center;
@@ -81,6 +83,8 @@ header .header-navbar a:hover{
     color: var(--support-extra);
     text-shadow: var(--text-shadow);
 }
+
+/*SEKCJA FOOTERA*/
 
 .footer{
     margin-top: auto;
