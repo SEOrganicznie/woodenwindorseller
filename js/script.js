@@ -1,7 +1,6 @@
 window.onload = function()
 {
-  includeHTML();
-  console.log("run ciasteczka");
+  loadHTML();
   if (!localStorage.getItem('cookies-read'))
   {
     document.getElementById('cookies-container').style.display = 'flex';
@@ -10,15 +9,13 @@ window.onload = function()
 
 function closeCookieInfo()
 {
-  console.log("run close ciasteczka");
   localStorage.setItem('cookies-read', 'true');
   document.getElementById('cookies-container').style.display = 'none';
 }
 
-function includeHTML()
+function loadHTML()
 {
-  console.log("run code");
-  var code = "get-html";
+  var code = "data-get-html";
   var error404 = "Nie znaleziono takiej strony";
   var elements, i, element, file, xhttp;
   elements = document.getElementsByTagName("*");
@@ -33,10 +30,10 @@ function includeHTML()
       {
         if (this.readyState == 4)
         {
-          if (this.status == 200) {element.innerHTML = this.responseText;}
-          if (this.status == 404) {element.innerHTML = error404;}
+          if (this.status == 200) element.innerHTML = this.responseText;
+          if (this.status == 404) element.innerHTML = error404;
           element.removeAttribute(code);
-          includeHTML();
+          loadHTML();
         }
       }      
       xhttp.open("GET", file, true);
