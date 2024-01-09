@@ -41,6 +41,10 @@
     margin: 5px 5px;
 }
 
+.gallery-item img:hover{
+    transform: scale(1.03);
+}
+
 .modal{
     display: none;
     position: fixed;
