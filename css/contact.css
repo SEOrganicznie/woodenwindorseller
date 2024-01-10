@@ -22,6 +22,14 @@ h1{
     text-transform: uppercase;
 }
 
+h2{
+    height: 45px;
+    color: var(--secondary-font);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-shadow: var(--text-shadow);
+}
+
 .contact-title-section{
     position: relative;
     align-items: center;
@@ -35,12 +43,12 @@ h1{
     background-color: var(--secondary);
 }
 
-.contact-title-container{
+.contact-title-handler{
     display: grid;
     text-align: center;
 }
 
-.contact-title-container p{
+.contact-title-handler p{
     position: relative;
     width: 620px;
     height: 45px;
@@ -52,75 +60,96 @@ h1{
 
 /* SEKCJA FORMULARZA I ADRESU*/
 
-.contact-container-handler{
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-data{
+.contact-data-container{
     display: flex;
     flex-direction: row;
+    width: 80vh;
     justify-content: space-between;
-    width: 100%;
 }
 
-/* ADRES */
+.contact-form-title{
+    padding-bottom: 1rem;
+}
 
-.contact-text{
+/*ADRES*/
+
+.contact-data-adress-handler{
     display: flex;
     flex-direction: column;
-    margin-right: 25px;
+    padding: 1rem;
 }
 
-/* FORMULARZ */
+/*FORMULARZ*/
+
+.contact-data-form-handler{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--support-box);
+    border-radius: 10px;
+    padding: 1rem;
+}
 
 .contact-form{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 10px;
+    padding: 0.2rem;
+}
+
+.form-item{
+    position: relative;
+    width: 100%;
+    height: 58px;
+    margin-bottom: 20px;
+}
+
+.form-name{
+    position: absolute;
+    left: 16px;
+    top: -19px;
+    padding: 8px;
     background-color: var(--support-box);
-    width: 18rem;
-    height: 17rem;
-    margin-left: 25px;
 }
 
-.contact-form-button{
-    display: flex;
-    justify-content: center;
-}
-
-.contact-form-button button{
-    width: 5rem;
-    height: 2.2rem;
+.form-input{
+    width: 40vh;
+    height: 100%;
+    background: none;
+    border: 2px solid var(--secondary);
     border-radius: 10px;
-    background-color: var(--support-extra);
+    padding: 1rem 0.3rem;
+}
+
+.form-text{
+    position: relative;
+}
+
+.form-text textarea{
+    height: 100px;
+    resize: none;
+}
+
+.form-button{
+    background-color: var(--secondary);
     color: var(--primary-font);
-    margin-top: .3rem;
-}
-
-.contact-form-button button:hover{
-    background-color: var(--support-extra-light);
-}
-
-.contact-form-text-box{
-    display: flex;
-    flex-direction: column;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
     width: 100%;
 }
 
-#quest{
-    height: 75px;
+.form-button:hover{
+    transform: scale(1.03);
+    background-color: var(--support-extra-light);
 }
 
 /* SEKCJA MAPY */
 
 .contact-map{
-    margin-top: 2rem;
+    margin-top: 2rem; 
 }
 
 .contact-map iframe{
-    width: 100%;
-    height: 450px;
+    width: 80vh;
+    height: 30vh;
     border: 0;
 }
