@@ -112,6 +112,11 @@
     padding: 1rem;
 }
 
+.compres-comimage-box img{
+    width: 200px;
+    height: 200px;
+}
+
 /* SEKCJA OTHER CONTENT */
 
 .othercontent-container{
