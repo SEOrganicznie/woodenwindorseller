@@ -1,0 +1,16 @@
+{
+    "name": "Wooden WinDor Seller",
+    "short_name": "Windor",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#000000",
+    "description": "Aplikacja windor",
+    "icons": [
+      {
+        "src": "logo/logo.png",
+        "sizes": "71x71",
+        "type": "image/png"
+      }
+    ]
+  }

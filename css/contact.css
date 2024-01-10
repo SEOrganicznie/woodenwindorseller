@@ -65,6 +65,7 @@ h2{
     flex-direction: row;
     width: 80vh;
     justify-content: space-between;
+    margin-left: 1%;
 }
 
 .contact-form-title{

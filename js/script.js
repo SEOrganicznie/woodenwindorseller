@@ -1,3 +1,5 @@
+document.addEventListener('touchstart', onTouchStart, {passive: true});
+
 window.onload = function()
 {
   loadHTML();
