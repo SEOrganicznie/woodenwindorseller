@@ -6,21 +6,45 @@
 .galleryinvite-container{
     position: relative;
     display: flex;
+    flex-direction: row;
+    top: -9rem;
+}
+
+@media (min-width: 768px) and (max-width: 1800px){
+    .galleryinvite-container{
+        top: -9rem;
+    }
+}
+
+@media (max-width: 767px){
+    .galleryinvite-container{
+        top: -4rem;
+    }
 }
 
 .galleryinvite-title{
     position: relative;
     display: grid;
-    top: -8rem;
-    left: 14rem;
+    left: 11rem;
 }
 
-.galleryinvite-title h3{
+@media (max-width: 1024px){
+    .galleryinvite-title{
+        left: 11rem;
+    }
+}
+
+@media (max-width: 767px){
+    .galleryinvite-title{
+        left: 11rem;
+    }
+}
+
+.galleryinvite-title h2{
     text-align: left;
     width: 260px;
     height: 90px;
     color: var(--primary-font);
-    font-size: 1.6rem;
     font-weight: 400;
     line-height: normal;
 }
@@ -30,7 +54,6 @@
     width: 620px;
     height: 45px;
     color: var(--support-extra);
-    font-size: .9rem;
     font-weight: 400;
     line-height: normal;
 }
@@ -45,8 +68,40 @@
     flex-direction: row;
     justify-content: space-between;
     justify-items: right;
-    top: -11rem;
+    top: -1rem;
     left: 4rem;
+}
+
+@media (min-width: 768px) and (max-width: 1800px){
+    .galleryinvite-gallery{
+        top: -1rem;
+        left: -8rem;
+    }
+}
+
+@media (max-width: 767px){
+    .galleryinvite-gallery{
+        top: -1rem;
+        left: -10rem;
+    }
+}
+
+@media (max-width: 1800px){
+    .galleryinvite-image-box{
+        display: none;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 1800px){
+    #important-to-view-p1, #important-to-view-p2{
+        display: flex;
+    }
+}
+
+@media (max-width: 1000px){
+    #important-to-view-p1{
+        display: flex;
+    }
 }
 
 .galleryinvite-image-box img{
@@ -54,6 +109,20 @@
     height: 350px;
     align-self: center;
     padding: 1rem;
+}
+
+@media (min-width: 768px) and (max-width: 1800px){
+    .galleryinvite-image-box img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px){
+    .galleryinvite-image-box img{
+        width: 150px;
+        height: 150px;
+    }
 }
 
 /* SEKCJA COPMANY PRESENTATION */
