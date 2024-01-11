@@ -6,6 +6,8 @@
 .gallery-title h1{
     position: relative;
     color: var(--secondary-font);
+    width: 620px;
+    height: 45px;
     font-size: 2.1rem;
     font-weight: 700;
     line-height: 50px;
@@ -30,7 +32,8 @@
 }
 
 .gallery-image{
-    width: 90%;
+    width: 400px;
+    height: 400px;
 }
 
 .modal{
