@@ -10,54 +10,6 @@ input{
     border-radius: 10px;
 }
 
-h1{
-    position: relative;
-    width: 620px;
-    height: 45px;
-    color: var(--primary-font);
-    font-size: 2.1rem;
-    font-weight: 700;
-    line-height: 50px;
-    text-shadow: var(--text-shadow);
-    text-transform: uppercase;
-}
-
-h2{
-    height: 45px;
-    color: var(--secondary-font);
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-shadow: var(--text-shadow);
-}
-
-.contact-title-section{
-    position: relative;
-    align-items: center;
-    justify-items: center;
-    display: flex;/*add*/
-    flex-direction: column;/*add*/
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 380px;
-    background-color: var(--secondary);
-}
-
-.contact-title-handler{
-    display: grid;
-    text-align: center;
-}
-
-.contact-title-handler p{
-    position: relative;
-    width: 620px;
-    height: 45px;
-    color: var(--support-font);
-    font-size: .9rem;
-    font-weight: 600;
-    text-shadow: var(--text-shadow);
-}
-
 /* SEKCJA FORMULARZA I ADRESU*/
 
 .contact-data-container{
@@ -66,6 +18,13 @@ h2{
     width: 80vh;
     justify-content: space-between;
     margin-left: 1%;
+}
+
+@media (max-width: 767px) {
+    .contact-data-container {
+        flex-direction: column;
+        width: 32vh;
+    }
 }
 
 .contact-form-title{
@@ -91,6 +50,10 @@ h2{
     padding: 1rem;
 }
 
+.contact-data-adress-handler h2, .contact-data-adress-handler p{
+    color: var(--secondary-font);
+}
+
 .contact-form{
     padding: 0.2rem;
 }
@@ -111,12 +74,18 @@ h2{
 }
 
 .form-input{
-    width: 40vh;
+    width: 42vh;
     height: 100%;
     background: none;
     border: 2px solid var(--secondary);
     border-radius: 10px;
     padding: 1rem 0.3rem;
+}
+
+@media (max-width: 767px) {
+    .form-input{
+        width: 30vh;
+    }
 }
 
 .form-text{
@@ -153,4 +122,11 @@ h2{
     width: 80vh;
     height: 30vh;
     border: 0;
+}
+
+@media (max-width: 767px) {
+    .contact-map iframe {
+        width: 34vh;
+        height: 30vh;
+    }
 }
