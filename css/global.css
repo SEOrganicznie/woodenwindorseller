@@ -242,13 +242,13 @@ footer img{
 
 @media (max-width: 767px){
     #footer-item-copy{
-        bottom: -30px;
+        bottom: -50px;
     }
 }
 
 @media (max-width: 767px){
     #footer-item-pp{
-        bottom: 35px;
+        bottom: 15px;
     }
 }
 

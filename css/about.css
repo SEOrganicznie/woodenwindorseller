@@ -7,13 +7,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    top: -9rem;
-}
-
-@media (min-width: 768px) and (max-width: 1800px){
-    .galleryinvite-container{
-        top: -9rem;
-    }
+    top: -10rem;
 }
 
 @media (max-width: 767px){
@@ -24,38 +18,45 @@
 
 .galleryinvite-title{
     position: relative;
-    display: grid;
-    left: 11rem;
-}
-
-@media (max-width: 1024px){
-    .galleryinvite-title{
-        left: 11rem;
-    }
-}
-
-@media (max-width: 767px){
-    .galleryinvite-title{
-        left: 11rem;
-    }
+    display: flex;
+    flex-direction: column;
+    left: 1rem;
 }
 
 .galleryinvite-title h2{
     text-align: left;
+    top: 2rem;
     width: 260px;
-    height: 90px;
+    height: 100px;
     color: var(--primary-font);
-    font-weight: 400;
     line-height: normal;
+}
+
+@media (max-width: 767px){
+    .galleryinvite-title h2{
+        top: 0;
+    }
 }
 
 .galleryinvite-title a p{
     text-align: left;
-    width: 620px;
+    top: 3rem;
+    width: 260px;
     height: 45px;
     color: var(--support-extra);
-    font-weight: 400;
     line-height: normal;
+}
+
+@media (min-width: 768px) and (max-width: 1800px){
+    .galleryinvite-title a p{
+        top: 4rem;
+    }
+}
+
+@media (max-width: 767px){
+    .galleryinvite-title a p{
+        top: -1rem;
+    }
 }
 
 .galleryinvite-title a p:hover{
@@ -66,23 +67,21 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    justify-items: right;
     top: -1rem;
-    left: 4rem;
+    left: 16rem;
 }
 
 @media (min-width: 768px) and (max-width: 1800px){
     .galleryinvite-gallery{
         top: -1rem;
-        left: -8rem;
+        left: 1rem;
     }
 }
 
 @media (max-width: 767px){
     .galleryinvite-gallery{
         top: -1rem;
-        left: -10rem;
+        left: -2rem;
     }
 }
 
@@ -129,16 +128,29 @@
 
 .compres-container{
     position: relative;
-    top: -6rem;
+    top: -7rem;
     align-items: center;
     justify-items: center;
-    display: flex;/*add*/
-    flex-direction: column;/*add*/
+    display: flex;
+    flex-direction: column;
     padding: 0;
     margin: 0;
     width: 100%;
     height: 380px;
     background-color: var(--support);
+}
+
+@media (min-width: 768px) and (max-width: 1300px){
+    .compres-container{
+        height: 600px;
+    }
+}
+
+@media (max-width: 767px){
+    .compres-container{
+        top: -3rem;
+        height: 400px;
+    }
 }
 
 .compres-title{
@@ -177,14 +189,67 @@
     justify-items: right;
 }
 
+@media (max-width: 1300px){
+    .compres-comgallery{
+        display: grid;
+        grid: repeat(2, auto) / auto-flow;
+    }
+}
+
 .compres-comimage-box{
-    padding: 1rem;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 1rem;
+}
+
+@media (max-width: 800px){
+    .compres-comimage-box{
+        width: 100px;
+    height: 100px;
+    }
 }
 
 .compres-comimage-box img{
+    display: block;
     width: 200px;
     height: 200px;
 }
+
+@media (max-width: 800px){
+    .compres-comimage-box img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.compres-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+
+  .compres-comimage-box:hover .compres-info {
+    transform: scale(1);
+  }
+
+  .compres-info p{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
 /* SEKCJA OTHER CONTENT */
 
