@@ -161,25 +161,17 @@ header .header-navbar a:hover{
 footer{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    width: 100%;
     height: 5vh;
     bottom: 0;
     background-color: var(--primary);
     box-shadow: var(--bottom-shadow-box);
 }
 
-@media (max-width: 767px){
-    footer{
-        height: 6vh;
-    }
-}
-
 footer p{
     color: var(--secondary-font);
     width: auto;
-    height: 48px;
 }
 
 footer img{
@@ -187,73 +179,14 @@ footer img{
     height: 20px;
 }
 
-.footer-item-sm, .footer-item-info{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
-    margin: 0 2%;
-}
-
-.footer-item-sm{
-    width: 35%;
-}
-
-.footer-item-info{
-    width: 50%;
+.footer-sm-item{
+    margin: 0 4%;
 }
 
 .footer-item{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 75%;
-    height: 48px;
-    margin: 0 2%;
-}
-
-@media (max-width: 767px){
-    .footer-item-info{
-        flex-direction: column;
-        align-items: center;
-        height: 50px;
-    }
-}
-
-@media (max-width: 767px) {
-    .footer-item{
-        position: relative;
-        justify-content: center;
-        width: 240px;
-        height: 30px;
-        left: -25px;
-        margin: 0;
-    }
-}
-
-@media (max-width: 767px){
-    .footer-item-sm{
-        display: grid;
-        grid: repeat(2, auto) / auto-flow;
-        height: 50px;
-    }
-}
-
-@media (max-width: 767px){
-    #footer-item-copy{
-        bottom: -50px;
-    }
-}
-
-@media (max-width: 767px){
-    #footer-item-pp{
-        bottom: 15px;
-    }
-}
-
-.footer-sm-item{
-    margin: 4% 4%;
+    margin: auto;
+    height: 30px;
 }
 
 /* KĄCIK CUKIERNIKA */
