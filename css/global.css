@@ -189,6 +189,16 @@ footer img{
     height: 30px;
 }
 
+@media (max-width: 767px) {
+    .footer-sm{
+        display: grid;
+        width: 45px;
+        height: 45px;
+        grid: repeat(2, auto) / auto-flow;
+        gap: 5%;
+    }    
+}
+
 /* KĄCIK CUKIERNIKA */
 
 #cookies-container{
