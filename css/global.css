@@ -168,6 +168,7 @@ footer{
 footer p{
     color: var(--secondary-font);
     width: auto;
+    height: 25px;
 }
 
 footer img{
@@ -210,12 +211,6 @@ footer img{
 .footer-column{
     display: flex;
     flex-direction: column;
-}
-
-.footer-column p{
-    height: 25px;
-    margin: 0;
-    padding: 0;
 }
 
 .footer-button{
