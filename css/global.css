@@ -159,14 +159,10 @@ header .header-navbar a:hover{
 /*SEKCJA FOOTERA*/
 
 footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 55px;
+    flex-direction: column;
+    height: 180px;
     bottom: 0;
-    background-color: var(--primary);
-    box-shadow: var(--bottom-shadow-box);
+    
 }
 
 footer p{
@@ -179,14 +175,62 @@ footer img{
     height: 20px;
 }
 
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-up{
+    height: 145px;
+    background-color: var(--support);
+    box-shadow: var(--bottom-shadow-box);
+}
+
+.footer-down{
+    height: 35px;
+    background-color: var(--primary);
+}
+
 .footer-sm-item{
     margin: 0 4px;
 }
 
+.footer-item-up{
+    display: flex;
+    height: 130px;
+}
+
 .footer-item{
     display: flex;
-    margin: auto;
     height: 30px;
+}
+
+.footer-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column p{
+    height: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-button{
+    background-color: var(--secondary);
+    color: var(--primary-font);
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.footer-button:hover{
+    transform: scale(1.03);
+    background-color: var(--support-extra-light);
 }
 
 @media (max-width: 767px) {
