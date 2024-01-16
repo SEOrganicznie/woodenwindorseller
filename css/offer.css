@@ -1,2 +1,40 @@
 /* SEKCJA ENTRY */
-/* jest w globalu
+/* jest w globalu*/
+
+.offer-container{
+    background-color: var(--support);
+}
+
+.offer-handler{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+@media (max-width: 767px){
+    .offer-handler{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.offer-block{
+    margin: .8rem;
+    background-color: var(--support-box);
+}
+
+.offer-content{
+    margin: 6px;
+}
+
+.offer-content-title{
+    text-align: center;
+    color: var(--secondary-font);
+}
+
+.offer-content-desc{
+    text-align: left;
+    height: auto;
+    color: var(--secondary-font);
+}
