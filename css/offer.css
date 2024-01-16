@@ -24,6 +24,10 @@
     background-color: var(--support-box);
 }
 
+.offer-block:hover{
+    transform: scale(1.03);
+}
+
 .offer-content{
     margin: 6px;
 }
