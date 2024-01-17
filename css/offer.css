@@ -1,8 +1,12 @@
 /* SEKCJA ENTRY */
 /* jest w globalu*/
 
-.offer-container{
+.offer-container-a{
     background-color: var(--support);
+}
+
+.offer-container-b{
+    background-color: var(--primary);
 }
 
 .offer-handler{
@@ -41,4 +45,24 @@
     text-align: left;
     height: auto;
     color: var(--secondary-font);
+}
+
+/*SEGMENT KONTAKTU*/
+
+.contact-us-block{
+    text-align: center;
+}
+
+.contact-us-block p{
+    color: var(--secondary-font);
+}
+
+.contact-us-button{
+    background-color: var(--secondary);
+    color: var(--primary-font);
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
 }
