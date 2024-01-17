@@ -7,6 +7,13 @@ window.onload = function()
   }
 }
 
+document.querySelector('.header-dropdownmenu').style.display = 'none';
+function dropDownmenu()
+{
+  var dropdownMenu = document.querySelector('.header-dropdownmenu');
+    dropdownMenu.style.display = dropdownMenu.style.display === 'none' ? 'block' : 'none';
+}
+
 function closeCookieInfo()
 {
   localStorage.setItem('cookies-read', 'true');

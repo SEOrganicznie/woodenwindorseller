@@ -13,6 +13,7 @@
     --secondary: #0B2241;
     --support: #EDEAEA;
     --support-box: #D9D9D9;
+    --support-box-trans: #d9d9d9ec;
     /*rest*/
     --support-extra: #20263C;
     --support-extra-light: #20267dc0;
@@ -109,19 +110,24 @@ p{
     }
 }
 
+li{
+    list-style: none;
+}
+
 
 /*SEKCJA HEADERA*/
 
 header{
-    position: flex;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    position: relative;
     width: 100%;
-    padding: .8rem 20%;
-    box-shadow: var(--shadow-box); 
-    background-color: var(--primary);
+    height: 80px;
+    z-index: 1000;
+    padding: 1%;
+}
+
+.header-logo{
+    width: 70px;
+    height: 70px;
 }
 
 #logo-img{
@@ -129,31 +135,73 @@ header{
     height: 70px;
 }
 
+.hamburger-menu{
+    position: absolute;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 100%;
+    height: 0.45rem;
+    margin: .45rem 0;
+    background-color: var(--secondary-font);
+}
+
 .header-navbar{
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    height: 75px;
+    margin: 0 auto;
 }
 
-@media (max-width: 767px){
-    .header-navbar{
-        flex-direction: column;
-    }
+.header-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 400px;
+    height: 70px;
 }
 
-header .header-navbar a{
-    font-family: 'Montserrat', sans-serif;
+.header-menu a, .header-dropdownmenu a{
     color: var(--secondary-font);
-    font-weight: 600;
-    width: 130px;
-    padding: 3%;
-    margin: 3%;
-    font-size: 1rem;
 }
 
-header .header-navbar a:hover{
-    color: var(--support-extra);
-    text-shadow: var(--text-shadow);
+.header-menu a:hover, .header-dropdownmenu a:hover{
+    color: var(--support-extra-light);
+}
+
+.header-dropdownmenu{
+    position: absolute;
+    display: none;
+    top: 60px;
+    width: 100%;
+    border-radius: 20px;
+    background-color: var(--support-box-trans);
+    z-index: 1000;
+}
+
+.header-dropdownmenu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+@media (max-width: 767px) {
+    .hamburger-menu{
+        display: block;
+    }
+
+    .header-menu{
+        display: none;
+    }
 }
 
 /*SEKCJA FOOTERA*/
