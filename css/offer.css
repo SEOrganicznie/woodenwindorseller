@@ -30,6 +30,13 @@
 
 .offer-block:hover{
     transform: scale(1.03);
+    background-color: var(--secondary);
+}
+
+.offer-block:hover .offer-content-title,
+.offer-block:hover .offer-content-desc {
+    transition: color 0.5s ease;
+    color: var(--primary-font);
 }
 
 .offer-content{
