@@ -16,7 +16,7 @@
     --support-box-trans: #d9d9d9ec;
     /*rest*/
     --support-extra: #20263C;
-    --support-extra-light: #20267dc0;
+    --support-extra-light: #017AC3;
 }
 
 /*GLOBALNE USTAWIENIA*/
@@ -55,8 +55,11 @@ img:hover{
     transform: scale(1.03);
 }
 
-h1, h1 span{
-    position: relative;
+h1{
+    display: grid;
+}
+
+h1 span{
     color: var(--primary-font);
     font-size: 2.1rem;
     font-weight: 700;
@@ -67,7 +70,7 @@ h1, h1 span{
 }
 
 @media (max-width: 767px) {
-    h1, h1 span{
+    h1 span{
         font-size: 1.7rem;
         width: 340px;
         height: 35px;
@@ -99,7 +102,6 @@ p{
     color: var(--support-font);
     font-size: .9rem;
     font-weight: 400;
-    text-shadow: var(--text-shadow);
 }
 
 @media (max-width: 767px) {
@@ -182,8 +184,7 @@ header{
     display: none;
     top: 60px;
     width: 100%;
-    border-radius: 20px;
-    background-color: var(--support-box-trans);
+    background-color: var(--support-box);
     z-index: 1000;
 }
 
@@ -204,18 +205,15 @@ header{
     }
 }
 
-/*SEKCJA FOOTERA*/
-
+/*---------------------------SEKCJA FOOTERA---------------------------*/
+/*global*/
 footer{
-    flex-direction: column;
-    height: 180px;
-    bottom: 0;
-    
+    height: 190px;
 }
 
 footer p{
     color: var(--secondary-font);
-    width: auto;
+    max-width: 250px;
     height: 25px;
 }
 
@@ -224,41 +222,35 @@ footer img{
     height: 20px;
 }
 
-.footer{
+.footer-up-handler, .footer-down-handler{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+    justify-content: space-between;
+    width: 85%;
 }
 
-.footer-up{
+/*up*/
+.footer-up-container{
     height: 145px;
     background-color: var(--support);
     box-shadow: var(--bottom-shadow-box);
 }
 
-.footer-down{
+.footer-up-ci p{
+    height: 20px;
+}
+
+/*down*/
+.footer-down-container{
     height: 35px;
     background-color: var(--primary);
 }
 
-.footer-sm-item{
-    margin: 0 4px;
-}
-
-.footer-item-up{
+.footer-sm{
     display: flex;
-    height: 130px;
-}
-
-.footer-item{
-    display: flex;
-    height: 30px;
-}
-
-.footer-column{
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 5px;
 }
 
 .footer-button{
@@ -276,14 +268,35 @@ footer img{
     background-color: var(--support-extra-light);
 }
 
+.footer-down-handler a p{
+    text-align: right;
+}
+
+
 @media (max-width: 767px) {
-    .footer-sm{
-        display: grid;
-        width: 45px;
-        height: 45px;
-        grid: repeat(2, auto) / auto-flow;
-        gap: 5%;
-    }    
+    footer{
+        height: 230px;
+    }
+
+    footer p{
+        max-width: 160px;
+        height: 23px;
+    }
+
+    .footer-up-container{
+        height: 260px;
+    }
+
+    .footer-up-handler {
+        flex-wrap: wrap;
+    }
+    .footer-up-handler > div {
+        flex: 1 0 100%;
+        margin: 5px 0;
+    }
+    .footer-up-handler > div:nth-child(-n+2) {
+        flex: 1 0 50%;
+    }
 }
 
 /* KĄCIK CUKIERNIKA */
@@ -314,52 +327,41 @@ footer img{
     margin-left: .8rem;
 }
 
-/* SEKCJA ENTRY*/
+/*-----------------SEKCJA ENTRY-------------------*/
 
 .entry-container{
-    position: relative;
     align-items: center;
-    justify-items: center;
-    display: flex;/*add*/
-    flex-direction: column;/*add*/
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    height: 380px;
     background-color: var(--secondary);
+    height: 350px;
 }
-
-@media (max-width: 767px) {
-    .entry-container{
-        height: 200px;
-    }
-}
-
 .entry-title{
-    position: relative;
-    display: grid;
-    top: -20%;
     text-align: center;
 }
 
-.entry-title h1{
-    display: grid;
-}
-
 .entry-title .separator{
-    position: relative;
     width: 400px;
     height: 5px;
     fill: none;
     justify-self: center;
 }
 
+.entry-title .separator path{
+    stroke: var(--support-extra-light);
+    stroke-width: 5;
+}
+
+.entry-title p{
+    top: 25px;
+}
+
 @media (max-width: 767px) {
+    .entry-container{
+        height: 200px;
+    }
+
     .entry-title .separator{
         width: 320px;
     }
 }
 
-.entry-title p{
-    top: 3rem;
-}
+/*------------------------------------------------*/
